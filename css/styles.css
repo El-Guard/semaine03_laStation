@@ -1,0 +1,150 @@
+/* ======================================================================
+Generic
+====================================================================== */
+
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ==========================================================================
+Éléments
+========================================================================== */
+
+/* ---------- Base ---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    background-color: #e3e4e4;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* ---------- Éléments texte ---------- */
+
+h1{
+    font-family: "Dosis", serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h2{
+    font-family: "Dosis", serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+a{
+    font-family: "Dosis", serif; 
+}
+
+li{
+    font-family: "Dosis", serif; 
+}
+
+/* ==========================================================================
+Components
+========================================================================== */
+
+/* ---------- Header+Nav ---------- */
+
+header{
+    background-color: white;
+}
+
+header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    color: black;
+    padding: 10px 4px 10px 4px;
+}
+
+header a p{
+    font-size: 44px;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+header li{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+li a:hover{
+    color: white;
+    background-color: #0E5EA1;
+    border-radius: 5px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+    background-size: cover;
+    background-image: url(../images/montagnes-banniere.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .wrapper{
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu-hero h1{
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.contenu-hero p{
+    margin: 0;
+    color: #2FCB48;
+}
+
+.contenu-hero{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    text-align: center;
+    color: white;  
+    padding: 24px 0 24px 0;
+    margin: 0;
+}
